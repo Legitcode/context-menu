@@ -8,7 +8,7 @@ This is a react component for overwriting right-clicks in the browser and displa
 
 ##Example
 
-Take a look at the [real example](http://legitcode.github.io/context-meny) first
+Take a look at the [real example](http://legitcode.github.io/context-menu) first
 
 ~~~js
 import ContextMenu from 'legit-context-menu';
