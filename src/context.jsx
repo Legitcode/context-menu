@@ -9,12 +9,14 @@ export default class Context extends React.Component{
   }
 
   componentDidMount(){
-    document.addEventListener('contextmenu', this.onContextMenu)
+    let node = this.props.node || document
+    node.addEventListener('contextmenu', this.onContextMenu)
     document.addEventListener('click', this.onClick)
   }
 
   componentWillUnmount(){
-    document.removeEventListener('click', this.onClick, false);
+    let node = this.props.node || document
+    node.removeEventListener('click', this.onClick, false);
     document.removeEventListener('contextmenu', this.onContextMenu, false);
   }
 

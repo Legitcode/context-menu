@@ -13,7 +13,7 @@ Take a look at the [real example](http://legitcode.github.io/context-menu) first
 ~~~js
 import ContextMenu from 'legit-context-menu';
 
-<ContextMenu>
+<ContextMenu node={document.querySelector('h3')}>
     <p>this will show when you right-click anywhere on the page</p>
 </ContextMenu>
 ~~~
@@ -21,4 +21,5 @@ import ContextMenu from 'legit-context-menu';
 ##Props
 
 - `onShow`: a function that will get the event from where the right click happened
+- `node`: what parts of the page should the context menu work on? defaults to the whole page
 That's it for now, will possibly add an option later that will allow the native right click to take place if the context menu is already active.

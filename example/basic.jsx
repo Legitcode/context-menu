@@ -10,6 +10,7 @@ export default class Basic extends React.Component {
   render() {
     return (
       <ContextMenu
+      node={document.querySelector('h3')}
       onShow={this.shown}
       style={{
         background: 'white',
