@@ -1,6 +1,6 @@
 {
   "name": "legit-context-menu",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a simple context-menu component that replaces a native right-click",
   "main": "lib/context.js",
   "scripts": {

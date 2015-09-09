@@ -20,8 +20,7 @@ export default class Context extends React.Component{
 
   onContextMenu = (e) => {
     e.preventDefault()
-    if(this.state.active) return
-    this.setState({active: true})
+    if(!this.state.active) this.setState({active: true})
     if(this.props.onShow) this.props.onShow(e)
     React.findDOMNode(this.refs.menu).style.top = e.clientY + 5
     React.findDOMNode(this.refs.menu).style.left = e.clientX + 10
